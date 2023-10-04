@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2121050429</title>
+    </head>
+    <body>
+        <h1 id="counter">0</h1>
+        <button>DXT!</button>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('button').onclick = count;
+            });
+            let counter = 0;
+            
+            function count() {
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+                if (counter % 10 === 0) {
+                    alert(`counter is at ${counter}!`);
+                }
+            }
+        </script>
+    </body>
+</html>
