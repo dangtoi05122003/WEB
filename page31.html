@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#form').onsubmit = submitForm;
+            });
+
+            function submitForm() {
+                const name = document.querySelector('#name').value;
+                alert(`Hello ${name}!`);
+                return false;
+            }
+        </script>
+        <title>DXT</title>
+    </head>
+    <body>
+        <form id="form">
+            <input type="text" id="name" autofocus placeholder="Name">
+            <input type="submit">
+        </form>
+    </body>
+</htmL>
