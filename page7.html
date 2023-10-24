@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>212105029</title>
+    </head>
+    <body>
+    <h1 id ="DXT">2121050429</h1>
+    <button class="color-change" data-color ="red">Red</button>
+    <button class="color-change" data-color ="blue">blue</button>
+    <button class="color-change" data-color ="Green">Green</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.color-change').forEach(function(button) {
+            button.onclick = function() {
+                document.querySelector('#DXT').style.color = button.dataset.color;
+            };
+        });
+    });
+</script>
+</body>
+</html>
