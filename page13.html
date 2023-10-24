@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script>
-            function hello() {
-                document.querySelector('h1').innerHTML = 'Đặng Xuân Tới';
-            }
-        </script>
-        <title>zakart.online</title>
-    </head>
-    <body>
-        <h1>2121050429</h1>
-        <button onclick="hello()">clickhere</button>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#submit').disabled = true;
+            document.querySelector('#new429').onkeyup = function() {
+                document.querySelector('#submit').disabled = false;
+            };
+            document.querySelector('#new429').onsubmit =function() {
+                const li = document.createElement('li');
+                li.innerHTML = document.querySelector('#zakart').value;
+                document.querySelector('#zakarts').append(li);
+                document.querySelector('#zakart').value = '';
+                document.querySelector('#submit').disabled = true;
+                return false;
+            };
+        });
+    </script>
+</head>
+<body>
+    <h1>test zakart.online</h1>
+    <ul id="zakarts">
+    </ul>
+    <form id ="new429">
+        <input type="text" id="zakart" autofocus placeholder="New website">
+        <input type = "submit">
+    </form>
+</body>
 </html>
