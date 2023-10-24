@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXT</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#new429').onsummit = function() {
+                const li = document.createElement('li');
+                li.innerHTML = document.querySelector('#zakart').value;
+                document.querySelector('#zakarts').append(li);
+                document.querySelector('#zakart').value = '';
+                return false;
+            };
+        });
+    </script>
+</head>
+<body>
+    <h1>test zakart.online</h1>
+    <ul id="zakarts">
+    </ul>
+    <form id ="new429">
+        <input type="text" id="zakart" autofocus placeholder="New website">
+        <input type = "submit">
+    </form>
+    
+</body>
+</html>
