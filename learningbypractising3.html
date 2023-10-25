@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>212105029</title>
+    <style>
+        #doi-tien-button {
+            display: none;
+        }
+    </style>
+    <script>
+        function kiemTraSoTien() {
+            var soTien = document.getElementById("so-tien").value;
+            var doiTienButton = document.getElementById("doi-tien-button");
+
+            if (soTien === "") {
+                doiTienButton.style.display = "none"; // Ẩn nút đổi tiền
+            } else {
+                doiTienButton.style.display = "inline-block"; // Hiển thị nút đổi tiền
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="so-tien">Số tiền muốn đổi:</label>
+    <input type="text" id="so-tien" onkeyup="kiemTraSoTien()" />
+
+    <button id="doi-tien-button">Đổi tiền</button>
+</body>
+</html>
