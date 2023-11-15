@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giới thiệu bản thân</title>
+</head>
+<body>
+	<h1 style="color:red">Giới thiệu về bản thân:</h1>
+	<h2 style="color:black">Tôi tên là Đặng Xuân Tới.</h2>
+	<h4>Click vào hình ảnh để truy cập vào trang Instagram của tôi.</h4>
+	<ul>
+                <li>Instagram: <a href="http://www.instagram.com/zakart_dang">zakart_dang</a></li>
+		<li><img src="https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang.jpg" width="200px" height="auto"><li>
+	</ul>
+	<ul>
+		<li>Sinh: 05/12/2003</li>
+		<li>Quê: Diễn kỷ, Diễn Châu, Nghệ An</li>
+		<li>Chiều Cao: 1m66</li>
+		<li>Cân Nặng: 45kg</li>
+		<li>Sở thích: nghe nhạc, xem phim, chơi game</li>
+	</ul>
+</body>
+</html>
