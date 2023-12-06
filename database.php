@@ -1,8 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "your_username";
-$password = "your_password";
 $db_name = "my_database";
+
 // Tạo kết nối
 $conn = new mysqli($servername, $username, $password, $db_name);
 

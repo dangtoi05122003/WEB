@@ -10,5 +10,7 @@
         require 'connect.php';
         $sql = "INSERT INTO flights (Origin,Destionation,Duration) VALUES ('Hà Nội', 'Paris', '4000')";
         $conn->query($sql);
-        $conn->cloe();
+        $conn->close();
     ?>
+</body>
+</html>
